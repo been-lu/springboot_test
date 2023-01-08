@@ -1,0 +1,32 @@
+#server:
+#  port: 8082
+#  address: 127.1.1.1
+
+name: lisi
+
+person:
+  name: ${name}
+  age: 20
+
+address:
+  - beijing
+  - shanghai
+
+msg1: 'hello \n world!'
+msg2: "hello \n world!"
+
+spring:
+  profiles: dev
+
+---
+spring:
+  profiles: test
+
+---
+spring:
+  profiles: pro
+
+---
+spring:
+  profiles:
+    active: dev
