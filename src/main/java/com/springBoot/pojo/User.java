@@ -4,7 +4,6 @@ public class User {
     private String uid;
     private String name;
     private String pwd;
-    private double hosts;
 
     public String getUid() {
         return uid;
@@ -30,11 +29,12 @@ public class User {
         this.pwd = pwd;
     }
 
-    public double getHosts() {
-        return hosts;
-    }
-
-    public void setHosts(double hosts) {
-        this.hosts = hosts;
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid='" + uid + '\'' +
+                ", name='" + name + '\'' +
+                ", pwd='" + pwd + '\'' +
+                '}';
     }
 }
